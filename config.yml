@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: ethanbill2398-sudo/Drytac50th
+  branch: main
+  auth_type: pkce
+  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID  # Replace after creating GitHub OAuth App
+
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: content
+    label: Page Content
+    files:
+      - name: site_content
+        label: Site Content
+        file: content.json
+        fields:
+
+          # ── Hero ────────────────────────────────────────────────
+          - label: Hero Tagline
+            name: hero_tagline
+            widget: string
+            hint: Small uppercase text above the headline (e.g. "The Fine Art of Finishing")
+
+          - label: Hero Subtitle
+            name: hero_sub
+            widget: text
+            hint: Paragraph below the main headline
+
+          # ── Story Section ────────────────────────────────────────
+          - label: Story — Heading
+            name: story_heading
+            widget: string
+
+          - label: Story — Paragraph 1
+            name: story_p1
+            widget: text
+
+          - label: Story — Paragraph 2
+            name: story_p2
+            widget: text
+
+          - label: Story — Paragraph 3
+            name: story_p3
+            widget: text
+
+          # ── Origin Section ───────────────────────────────────────
+          - label: Origin — Heading
+            name: origin_heading
+            widget: string
+
+          - label: Origin — Paragraph 1
+            name: origin_p1
+            widget: text
+
+          - label: Origin — Paragraph 2
+            name: origin_p2
+            widget: text
+
+          - label: Origin — Paragraph 3
+            name: origin_p3
+            widget: text
